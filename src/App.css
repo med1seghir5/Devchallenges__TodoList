@@ -1,0 +1,139 @@
+body {
+    background-color: #DBE2EF;
+}
+
+.Todolist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Todolist h1 {
+    font-size: 50px;
+}
+
+.Inp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.Inp input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Inp button {
+    padding: 8px 12px;
+    background-color: #fff;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Inp button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1.7px solid #000;
+}
+
+.Tasks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 50px;
+    border: none;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+
+.TasksButt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+}
+
+.but {
+    display: flex;
+    gap: 5px;
+}
+
+.but button {
+    padding: 8px 12px;
+    background-color: #B1B1B1;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.but button:hover {
+    background-color: #B1B1B1;
+    color: #000;
+    border: 2px solid #000;
+}
+
+@media (max-width: 720px) {
+    .Todolist h1 {
+        font-size: 40px;
+    }
+
+    .Tasks {
+        margin-top: 40px;
+    }
+
+    .Inp input {
+        width: 95%;
+        padding: 9px;
+    }
+
+    .Inp button {
+        padding: 7px 11px;
+    }
+
+    .TasksButt {
+        flex-direction: column;
+    }
+
+    .but {
+        flex-direction: column;
+        gap: 7px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .Todolist h1 {
+        font-size: 30px;
+    }
+
+    .Tasks {
+        margin-top: 30px;
+    }
+
+    .Inp input {
+        width: 90%;
+        padding: 8px;
+    }
+
+    .Inp button {
+        padding: 6px 10px;
+    }
+
+    .TasksButt {
+        flex-direction: column;
+    }
+
+    .but {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

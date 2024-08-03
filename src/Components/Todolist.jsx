@@ -55,9 +55,9 @@ function Todolist() {
                 {Task.map((item, index) => {
                     return (
                         <div key={index} className='TasksButt'> 
-                            <div><input type='checkbox' /></div>                      
-                            <div><h3>{item}</h3></div>
-                            <div><h3>{date[index]}</h3></div>
+                            <div><h3><p style={{ fontSize: '15px', fontFamily:'sans-serif' }}>Check</p><input type='checkbox' /></h3></div>                      
+                            <div><h3><p style={{ fontSize: '15px', fontFamily:'sans-serif'  }}>Task:</p>{item}</h3></div>
+                            <div><h3><p style={{ fontSize: '15px', fontFamily:'sans-serif'  }}>Deadline:</p>{date[index]}</h3></div>
                             <div className='but'>
                                 <button onClick={() => { setTask(Task.filter((_, i) => i !== index)); setDate(date.filter((_, i) => i !== index)) }}><SlTrash /></button>
                                 <button onClick={() => editTask(index)}><SlWrench /></button>
